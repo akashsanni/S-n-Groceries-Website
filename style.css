@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&display=swap');
 
 :root{
-   --orange:#ff7800;
+   --orange:#428612;
    --light-orange:#f5b278;
    --black: #130f40;
    --light-color:#666;
@@ -292,6 +292,8 @@ section{
 
 }
 
+/* home */
+
 .home{
     display: flex;
     align-items: center;
@@ -324,6 +326,8 @@ section{
     padding: 1rem 0;
     line-height: 1.8;
 }
+
+/* features */
 
 .features .box-container{
     display: grid;
@@ -364,6 +368,7 @@ section{
     padding: 1rem 0;
 }
 
+/* products */
 .products .products-slider{
     padding: 1rem;
 }
@@ -410,6 +415,7 @@ section{
     padding: .5rem 0;
 }
 
+/* categories */
 .categories .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
@@ -449,6 +455,7 @@ section{
     padding: 1rem 0;
 }
 
+/* review */
 .review .review-slider{
     padding: 1rem;
 }
@@ -493,6 +500,7 @@ section{
     font-size: 1.7rem;
 }
 
+/* blogs */
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
@@ -556,6 +564,7 @@ section{
     padding: .5rem 0;
 }
 
+/* footer */
 .footer{
     background: #fff;
 }
@@ -565,10 +574,6 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
     gap: 1.5rem; 
 }
-
-/* .footer .box-container .box{
-    text-align: center;
-} */
 
 .footer .box-container .box h3{
     font-size: 2.2rem;
