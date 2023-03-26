@@ -51,7 +51,6 @@ section{
 
 .heading span{
     background: var(--orange);
-    /* font-size: ; */
     color: #fff;
     display: inline-block;
     padding: .5rem 3rem;
@@ -99,14 +98,6 @@ section{
 .header .logo .fas{
     width: 6.5rem;
 }
-
-/* .header .logo i{
-    color: var(--orange);
-} */
-
-/* .header .logo i:hover{
-    color: var(--light-orange);
-} */
 
 .header .navbar a{
     font-size: 1.7rem;
@@ -288,8 +279,6 @@ section{
 .header .login-form p a{
     color: var(--orange);
     text-decoration: underline;
-    /* font-size: 1rem; */
-
 }
 
 /* home */
@@ -511,8 +500,7 @@ section{
   overflow: hidden;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
-  background: #fff;  
-  /* text-align: center; */
+  background: #fff; 
 }
 
 .blogs .box-container .box img{
@@ -665,12 +653,6 @@ section{
     color: var(--orange);
 }
 
-
-
-
-
-
-
 /* media-queries */
 @media (max-width: 991px){
     html{
@@ -687,7 +669,6 @@ section{
     
     }
 }
-
 
 @media (max-width: 768px){
     #menu-btn{
@@ -714,7 +695,6 @@ section{
         display: block;
     }
 }
-
 
 @media (max-width: 450px){
     html{
