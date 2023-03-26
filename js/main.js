@@ -2,6 +2,8 @@ import { products_1 } from "./products-1.js"
 import { products_2 } from "./products-2.js"
 import { categories } from "./categories.js"
 import { features } from "./features.js"
+import { persons } from "./persons.js"
+import { blogs } from "./blogs.js"
 // console.log(products)
 
 // DOM Variables
@@ -86,7 +88,7 @@ var swiper = new Swiper(".review-slider", {
         delay: 2500,
         disableOnInteraction: false,
     },
-    centeredSlides: true,
+    centeredSlides: false,
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -217,3 +219,54 @@ window.addEventListener("DOMContentLoaded", function () {
 //   e.preventDefault();
 //   console.log(e.target.classList.value === `btn add-to-cart`);
 // })
+
+const reviewWrapper = document.querySelector('.review-wrapper');
+const blogsContainer = document.querySelector('.blogs-container');
+
+window.addEventListener("DOMContentLoaded", function () {
+  let displayProducts = persons.map(function (person) {
+
+    return `
+        <div class="swiper-slide box">
+            <img src="${person.img}" alt="">
+            <p>${person.desc}</p>
+            <h3>${person.name}</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    `;
+  });
+  displayProducts = displayProducts.join("");
+  
+
+  reviewWrapper.innerHTML = displayProducts;
+});
+
+window.addEventListener("DOMContentLoaded", function () {
+  let displayProducts = blogs.map(function (blog) {
+
+    return `
+    <div class="box">
+        <img src="${blog.img}" alt="" >
+        <div class="content">
+            <div class="icons">
+                <a href="#"> <i class="fas fa-user"></i> by user </a>
+                <a href="#"> <i class="fas fa-calendar"></i> ${blog.date} </a>
+            </div>
+            <h3>${blog.feature}</h3>
+            <p>${blog.desc}</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div> 
+    `;
+  });
+  displayProducts = displayProducts.join("");
+  
+
+  blogsContainer.innerHTML = displayProducts;
+});
